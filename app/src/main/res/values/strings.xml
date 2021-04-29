@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SWAPI</string>
+    <string name="search_hint">Enter Person Name</string>
+
+    <string name="height_template">Height: %1$s cm</string>
+    <string name="mass_template">Weight: %1$s kilos</string>
+    <string name="gender_template">Gender: %1$s</string>
+    <string name="birth_template">DOB: %1$s</string>
+
+    <string name="empty_person_list">No results or bad internet. Please try again. (May the force be with you next time.)</string>
+    <string name="refresh_button">REFRESH</string>
+</resources>

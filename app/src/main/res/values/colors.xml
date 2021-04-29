@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DARK SIDE -->
+    <color name="colorPrimary_dark">@color/black</color>
+    <color name="colorPrimaryVariant_dark">#2E2B2B</color>
+    <color name="colorOnPrimary_dark">@color/white</color>
+    <color name="colorSecondary_dark">#DC0D26</color>
+    <color name="colorSecondaryVariant_dark">#4C1D2A</color>
+    <color name="colorOnSecondary_dark">@color/black</color>
+
+    <!-- LIGHT SIDE-->
+    <color name="colorPrimary_light">#4E4E4E</color>
+    <color name="colorPrimaryVariant_light">#2E2B2B</color>
+    <color name="colorOnPrimary_light">@color/black</color>
+    <color name="colorSecondary_light">#0D3ADC</color>
+    <color name="colorSecondaryVariant_light">#081939</color>
+    <color name="colorOnSecondary_light">@color/white</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/portrait"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/black"
+        android:scaleType="fitCenter" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:background="#33000000"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_gravity="bottom">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/center_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextAppearance.MaterialComponents.Headline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="Luke SkyWalker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/homeworld"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            tools:text="Tattooinianein"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/gender"
+            style="@style/DetailsTextView"
+            tools:text="Gender: male"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homeworld"/>
+
+        <TextView
+            android:id="@+id/birth_year"
+            style="@style/DetailsTextView"
+            tools:text="DOB: Blah 45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gender"/>
+
+        <TextView
+            android:id="@+id/height"
+            style="@style/DetailsTextView"
+            tools:text="Height: 123m"
+            app:layout_constraintStart_toStartOf="@id/center_guide"
+            app:layout_constraintTop_toBottomOf="@id/homeworld"/>
+
+        <TextView
+            android:id="@+id/mass"
+            style="@style/DetailsTextView"
+            tools:text="Weight: 70kg"
+            app:layout_constraintStart_toStartOf="@id/center_guide"
+            app:layout_constraintTop_toBottomOf="@id/height" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
